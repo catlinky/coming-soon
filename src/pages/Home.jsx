@@ -25,15 +25,15 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
+        <Newsletter />
+
         <FeaturesBlocks />
         <FeaturesZigZag />
         <Testimonials />
         <Newsletter />
       </main>
 
-      <Banner />
-
-      {/*  Site footer */}
+      {/* <Banner /> */}
       <Footer />
     </div>
   );
