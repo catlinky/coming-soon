@@ -1,10 +1,10 @@
 import React from 'react';
 import FeatBlockImg1 from '../images/block-1.png';
-import FeatBlockImg2 from '../images/block-1.png';
-import FeatBlockImg3 from '../images/block-1.png';
-import FeatBlockImg4 from '../images/block-1.png';
-import FeatBlockImg5 from '../images/block-1.png';
-import FeatBlockImg6 from '../images/block-1.png';
+import FeatBlockImg2 from '../images/block-2.png';
+import FeatBlockImg3 from '../images/block-3.png';
+import FeatBlockImg4 from '../images/block-4.png';
+import FeatBlockImg5 from '../images/block-5.png';
+import FeatBlockImg6 from '../images/block-6.png';
 
 function FeaturesBlocks() {
   return (
