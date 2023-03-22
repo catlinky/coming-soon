@@ -13,7 +13,7 @@ function FeaturesBlocks() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">
+            <h2 className="h2 mb-4 rainbow-text">
               Are you tired of cluttered bios and juggling multiple links for
               your online presence?
             </h2>

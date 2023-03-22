@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 import 'aos/dist/aos.css';
 import './css/style.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import AOS from 'aos';
 
@@ -31,6 +33,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
       </Routes>
+      <ToastContainer />
     </>
   );
 }

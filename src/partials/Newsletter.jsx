@@ -1,6 +1,41 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
+import { supabase } from '../lib/supabaseClient';
 
 function Newsletter() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = async (data) => {
+    let { error } = await supabase.from('users').insert({
+      email: data.email.toLowerCase(),
+    });
+
+    if (error) {
+      toast(
+        'Ooops, You already subscribe. We will let you know once we launch it',
+        {
+          autoClose: 3000,
+          position: 'top-center',
+          type: 'error',
+        }
+      );
+      return;
+    }
+
+    toast(
+      'Thank you. We will let you know once we launch it. Meanwhile, You can follow us in our social media for more update from us.',
+      {
+        autoClose: 8000,
+        position: 'top-center',
+      }
+    );
+    reset();
+  };
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -55,23 +90,30 @@ function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2">
+            <form className="w-full lg:w-1/2" onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input
-                  type="email"
+                  type="text"
                   className="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400"
                   placeholder="Your best email…"
                   aria-label="Your best email…"
+                  {...register('email', {
+                    required: 'required',
+                    pattern: {
+                      value: /\S+@\S+\.\S+/,
+                      message: 'Entered value does not match email format',
+                    },
+                  })}
                 />
-                <a
-                  className="btn text-purple-600 bg-purple-100 hover:bg-white shadow"
-                  href="#0"
-                >
+                <button className="btn text-purple-600 bg-purple-100 hover:bg-white shadow">
                   Subscribe
-                </a>
+                </button>
               </div>
-              {/* Success message */}
-              {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
+              {errors.email && (
+                <p className="text-center lg:text-left lg:absolute mt-2 text-red-400">
+                  Please input your email
+                </p>
+              )}
             </form>
           </div>
         </div>

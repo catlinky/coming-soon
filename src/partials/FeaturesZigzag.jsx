@@ -14,7 +14,7 @@ function FeaturesZigzag() {
             <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">
               Build for you
             </div>
-            <h1 className="h2 mb-4">
+            <h1 className="h2 mb-4 rainbow-text">
               Our all-in-one platform offers a beautiful and clean UI, allowing
               you to drag and drop to design your link positions with ease.
             </h1>
