@@ -40,7 +40,7 @@ function FeaturesBlocks() {
                 width="80"
                 alt="Features 01"
               />
-              <h4 className="h4 mb-2">Customizable Bio Link</h4>
+              <h4 className="h4 mb-2 mt-2">Customizable Bio Link</h4>
               <p className="text-lg text-gray-400 text-center">
                 Showcase all of your important links in one place
               </p>
@@ -58,7 +58,7 @@ function FeaturesBlocks() {
                 width="80"
                 alt="Features 02"
               />
-              <h4 className="h4 mb-2">Online Store</h4>
+              <h4 className="h4 mb-2 mt-2">Online Store</h4>
               <p className="text-lg text-gray-400 text-center">
                 Sell products directly from your bio link with our e-commerce
                 integration.
@@ -78,7 +78,7 @@ function FeaturesBlocks() {
                 width="80"
                 alt="Features 03"
               />
-              <h4 className="h4 mb-2">Appointment Scheduling</h4>
+              <h4 className="h4 mb-2 mt-2">Appointment Scheduling</h4>
               <p className="text-lg text-gray-400 text-center">
                 Allow clients to schedule appointments with you directly from
                 your bio link.
@@ -98,7 +98,7 @@ function FeaturesBlocks() {
                 width="80"
                 alt="Features 04"
               />
-              <h4 className="h4 mb-2">Analytics and Tracking</h4>
+              <h4 className="h4 mb-2 mt-2">Analytics and Tracking</h4>
               <p className="text-lg text-gray-400 text-center">
                 Measure the success of your bio link and e-commerce store with
                 analytics and tracking.
@@ -118,7 +118,7 @@ function FeaturesBlocks() {
                 width="80"
                 alt="Features 05"
               />
-              <h4 className="h4 mb-2">Social Media Integration</h4>
+              <h4 className="h4 mb-2 mt-2">Social Media Integration</h4>
               <p className="text-lg text-gray-400 text-center">
                 Connect your social media accounts to your bio link for a
                 seamless experience.
@@ -137,7 +137,7 @@ function FeaturesBlocks() {
                 width="80"
                 alt="Features 06"
               />
-              <h4 className="h4 mb-2">And More...</h4>
+              <h4 className="h4 mb-2 mt-2">And More...</h4>
               <p className="text-lg text-gray-400 text-center">
                 We have lot of new things coming for you.
               </p>
