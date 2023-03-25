@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from '../utils/Modal';
 
 import HeroImage from '../images/hero-image-01.jpg';
+import HeroImg from '../images/hero.svg';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -47,9 +48,9 @@ function HeroHome() {
         </div>
 
         {/* Hero content */}
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+        <div className="relative pt-32 pb-2 md:pt-40">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto text-center pb-8">
             <h1 className="h1 mb-4 rainbow-text" data-aos="fade-up">
               Introducing the Ultimate All-in-One Platform for Your Online Needs
             </h1>
@@ -63,8 +64,15 @@ function HeroHome() {
             </p>
           </div>
 
-          {/* Hero image */}
           <div>
+            <img
+              className="max-w-full mx-auto md:max-w-none h-auto"
+              src={HeroImg}
+              alt="Features 03"
+            />
+          </div>
+
+          {/* <div>
             <div
               className="relative flex justify-center items-center"
               data-aos="fade-up"
@@ -113,7 +121,6 @@ function HeroHome() {
               </a>
             </div>
 
-            {/* Modal */}
             <Modal
               id="modal"
               ariaLabel="modal-headline"
@@ -129,7 +136,7 @@ function HeroHome() {
                 ></iframe>
               </div>
             </Modal>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
