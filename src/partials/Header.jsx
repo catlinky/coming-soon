@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../images/logo.svg';
+import Logo from '../images/logo.png';
 
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -40,7 +40,7 @@ function Header() {
         <div className="flex items-center justify-center h-20">
           <div className="shrink-0 mr-4">
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={Logo} />
+              <img src={Logo} width="300" />
             </Link>
           </div>
         </div>
